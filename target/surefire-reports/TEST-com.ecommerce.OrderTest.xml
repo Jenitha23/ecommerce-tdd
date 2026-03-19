@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.CartTest" time="0.109" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.OrderTest" time="1.565" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jenitha\AppData\Local\Temp\surefire772269087880735788\surefirebooter-20260319153746018_3.jar C:\Users\Jenitha\AppData\Local\Temp\surefire772269087880735788 2026-03-19T15-37-45_694-jvmRun1 surefire-20260319153746018_1tmp surefire_0-20260319153746018_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jenitha\AppData\Local\Temp\surefire10500330326026808183\surefirebooter-20260319153810485_3.jar C:\Users\Jenitha\AppData\Local\Temp\surefire10500330326026808183 2026-03-19T15-38-10_200-jvmRun1 surefire-20260319153810485_1tmp surefire_0-20260319153810485_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.ecommerce.CartTest"/>
+    <property name="test" value="com.ecommerce.OrderTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\target\test-classes;C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\target\classes;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Jenitha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Jenitha\.m2\repository\org\mockito\mockito-junit-jupiter\5.5.0\mockito-junit-jupiter-5.5.0.jar;C:\Users\Jenitha\.m2\repository\org\mockito\mockito-core\5.5.0\mockito-core-5.5.0.jar;C:\Users\Jenitha\.m2\repository\net\bytebuddy\byte-buddy\1.14.6\byte-buddy-1.14.6.jar;C:\Users\Jenitha\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.6\byte-buddy-agent-1.14.6.jar;C:\Users\Jenitha\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Jenitha"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jenitha\AppData\Local\Temp\surefire772269087880735788\surefirebooter-20260319153746018_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jenitha\AppData\Local\Temp\surefire10500330326026808183\surefirebooter-20260319153810485_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.16+8"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddItemNotInCatalogThrowsException" classname="com.ecommerce.CartTest" time="0.05"/>
-  <testcase name="testAddItemWithNegativeQuantityThrowsException" classname="com.ecommerce.CartTest" time="0.002"/>
-  <testcase name="testAddItemToCart" classname="com.ecommerce.CartTest" time="0.002"/>
-  <testcase name="testRemoveItemFromCart" classname="com.ecommerce.CartTest" time="0.001"/>
-  <testcase name="testCartTotal" classname="com.ecommerce.CartTest" time="0.007"/>
-  <testcase name="testAddItemWithZeroQuantityThrowsException" classname="com.ecommerce.CartTest" time="0.002"/>
+  <testcase name="testOrderHasCorrectLineItems" classname="com.ecommerce.OrderTest" time="1.483"/>
+  <testcase name="testFakeRepositoryStoresAndRetrievesOrders" classname="com.ecommerce.OrderTest" time="0.01"/>
+  <testcase name="testOrderHasTimestamp" classname="com.ecommerce.OrderTest" time="0.005"/>
+  <testcase name="testSuccessfulCheckoutCreatesOrder" classname="com.ecommerce.OrderTest" time="0.01"/>
+  <testcase name="testFailedPaymentDoesNotCreateOrder" classname="com.ecommerce.OrderTest" time="0.004"/>
+  <testcase name="testOrderHasCorrectTotal" classname="com.ecommerce.OrderTest" time="0.006"/>
 </testsuite>

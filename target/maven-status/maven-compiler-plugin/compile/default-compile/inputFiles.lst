@@ -6,8 +6,11 @@ C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\Check
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\DiscountEngine.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\DiscountRule.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\FakeInventoryService.java
+C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\FakeOrderRepository.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\InventoryService.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\LineItem.java
+C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\Order.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\OrderDiscountRule.java
+C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\OrderRepository.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\PaymentGateway.java
 C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\src\main\java\com\ecommerce\Product.java

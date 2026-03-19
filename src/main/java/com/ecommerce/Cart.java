@@ -85,4 +85,9 @@ public class Cart {
         LineItem item = items.get(sku);
         return item == null ? 0.0 : item.getSubtotal();
     }
+    // Returns the actual Product object for a given SKU
+    public Product getProductBySku(String sku) {
+        LineItem item = items.get(sku);
+        return item == null ? null : item.getProduct();
+    }
 }

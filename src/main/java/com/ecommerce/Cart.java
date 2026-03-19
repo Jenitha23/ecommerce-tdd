@@ -75,4 +75,14 @@ public class Cart {
             );
         }
     }
+    // Returns all SKUs currently in the cart
+    public java.util.Set<String> getSkus() {
+        return items.keySet();
+    }
+
+    // Returns the subtotal for a single SKU line
+    public double getLineTotal(String sku) {
+        LineItem item = items.get(sku);
+        return item == null ? 0.0 : item.getSubtotal();
+    }
 }

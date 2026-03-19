@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.DiscountTest" time="0.138" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.CheckoutTest" time="2.139" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jenitha\AppData\Local\Temp\surefire18259928496867715371\surefirebooter-20260319152435436_3.jar C:\Users\Jenitha\AppData\Local\Temp\surefire18259928496867715371 2026-03-19T15-24-35_169-jvmRun1 surefire-20260319152435436_1tmp surefire_0-20260319152435436_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jenitha\AppData\Local\Temp\surefire8923855269617036374\surefirebooter-20260319152648974_3.jar C:\Users\Jenitha\AppData\Local\Temp\surefire8923855269617036374 2026-03-19T15-26-48_728-jvmRun1 surefire-20260319152648974_1tmp surefire_0-20260319152648974_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.ecommerce.DiscountTest"/>
+    <property name="test" value="com.ecommerce.CheckoutTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\target\test-classes;C:\Users\Jenitha\Desktop\tdd-lab\ecommerce-tdd\target\classes;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\Jenitha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\Jenitha\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\Jenitha\.m2\repository\org\mockito\mockito-junit-jupiter\5.5.0\mockito-junit-jupiter-5.5.0.jar;C:\Users\Jenitha\.m2\repository\org\mockito\mockito-core\5.5.0\mockito-core-5.5.0.jar;C:\Users\Jenitha\.m2\repository\net\bytebuddy\byte-buddy\1.14.6\byte-buddy-1.14.6.jar;C:\Users\Jenitha\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.6\byte-buddy-agent-1.14.6.jar;C:\Users\Jenitha\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Jenitha"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jenitha\AppData\Local\Temp\surefire18259928496867715371\surefirebooter-20260319152435436_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jenitha\AppData\Local\Temp\surefire8923855269617036374\surefirebooter-20260319152648974_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.16+8"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testOrderDiscountAppliedWhenTotalOverThousand" classname="com.ecommerce.DiscountTest" time="0.066"/>
-  <testcase name="testBulkDiscountAppliedWhenQuantityTen" classname="com.ecommerce.DiscountTest" time="0.002"/>
-  <testcase name="testNoDiscountsOnSmallOrder" classname="com.ecommerce.DiscountTest" time="0.003"/>
-  <testcase name="testBulkDiscountOnlyOnQualifyingSku" classname="com.ecommerce.DiscountTest" time="0.003"/>
-  <testcase name="testBulkAndOrderDiscountCombined" classname="com.ecommerce.DiscountTest" time="0.003"/>
-  <testcase name="testNoBulkDiscountBelowThreshold" classname="com.ecommerce.DiscountTest" time="0.001"/>
+  <testcase name="testPaymentNotCalledWhenCartEmpty" classname="com.ecommerce.CheckoutTest" time="1.937"/>
+  <testcase name="testPaymentFailureReturnsError" classname="com.ecommerce.CheckoutTest" time="0.096"/>
+  <testcase name="testEmptyCartThrowsException" classname="com.ecommerce.CheckoutTest" time="0.005"/>
+  <testcase name="testDiscountAppliedBeforePayment" classname="com.ecommerce.CheckoutTest" time="0.035"/>
+  <testcase name="testPaymentGatewayCalledWithCorrectAmount" classname="com.ecommerce.CheckoutTest" time="0.006"/>
+  <testcase name="testSuccessfulCheckout" classname="com.ecommerce.CheckoutTest" time="0.006"/>
 </testsuite>

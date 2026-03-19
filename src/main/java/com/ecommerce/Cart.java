@@ -6,15 +6,24 @@ import java.util.Map;
 public class Cart {
 
     private final Catalog catalog;
+    private final InventoryService inventoryService;
     private final Map<String, LineItem> items = new HashMap<>();
 
-    public Cart(Catalog catalog) {
+    // Constructor WITH inventory service (used from Requirement C onwards)
+    public Cart(Catalog catalog, InventoryService inventoryService) {
         this.catalog = catalog;
+        this.inventoryService = inventoryService;
+    }
+
+    // Old constructor kept so Requirement B tests don't break
+    public Cart(Catalog catalog) {
+        this(catalog, null);
     }
 
     public void addItem(String sku, int quantity) {
         validateQuantity(quantity);
         Product product = findProductOrThrow(sku);
+        checkInventory(sku, quantity);
 
         if (items.containsKey(sku)) {
             LineItem existing = items.get(sku);
@@ -53,5 +62,17 @@ public class Cart {
             throw new IllegalArgumentException("Product not found in catalog: " + sku);
         }
         return product;
+    }
+
+    private void checkInventory(String sku, int quantity) {
+        if (inventoryService == null) return;
+        int available = inventoryService.getAvailable(sku);
+        if (quantity > available) {
+            throw new IllegalStateException(
+                "Insufficient inventory for SKU: " + sku +
+                ". Requested: " + quantity +
+                ", Available: " + available
+            );
+        }
     }
 }
